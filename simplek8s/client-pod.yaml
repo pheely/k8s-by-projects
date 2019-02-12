@@ -1,0 +1,12 @@
+apiVersin: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    components: web
+spec:
+  containers:
+    - name: client
+      image: pheely/multi-client
+      ports:
+        - containerPort: 3000
